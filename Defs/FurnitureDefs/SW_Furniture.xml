@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+
+	<ThingDef Name="PJ_BuildingBase" Abstract="True">
+		<category>Building</category>
+		<thingClass>Building</thingClass>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<repairEffect>Repair</repairEffect>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>BuildingRubble</filthLeaving>
+	</ThingDef>
+
+	<ThingDef Name="PJ_FurnitureBase" ParentName="PJ_BuildingBase" Abstract="True">
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+    <DesignationCategory>Furniture</DesignationCategory>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <tradeTags>
+      <li>Furniture</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef Name="PJ_ArtableFurnitureBase" ParentName="PJ_FurnitureBase" Abstract="True">
+    <comps>
+      <li Class="CompProperties_Art">
+        <nameMaker>ArtName_Furniture</nameMaker>
+        <descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+  </ThingDef>
+
+
+	<ThingDef ParentName="PJ_FurnitureBase">
+		<defName>SW_Impchair</defName>
+		<label>Imperial style chair</label>
+		<graphicData>
+			<texPath>Furniture/Empchair</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.4,2.4)</drawSize>
+			<shadowData>
+				<volume>(0.6, 0.6, 0.6)</volume>
+			</shadowData>
+			<damageData>
+				<rectN>(0,0,1,0.703125)</rectN>
+				<rectS>(0.09375,0,0.84375,1)</rectS>
+				<rectE>(0,0,0.84375,0.625)</rectE>
+				<rectW>(0.15625,0,0.84375,0.625)</rectW>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>220</MaxHitPoints>
+			<WorkToBuild>7800</WorkToBuild>
+			<Mass>18</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>32</Beauty>
+			<Comfort>2</Comfort>
+		</statBases>
+		<description>A seat worthy of an Emperor.</description>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>10</costStuffCount>
+		<pathCost>1</pathCost>
+		<fillPercent>0.40</fillPercent>
+		<building>
+			<isSittable>true</isSittable>
+		</building>
+		<rotatable>true</rotatable>
+	</ThingDef>
+
+
+	  <ThingDef ParentName="PJ_ArtableFurnitureBase">
+    <defName>SW_Impbed</defName>
+    <label>Imperial-Style bed</label>
+    <Description>A luxurious bed designed by Xen. Very comfy and beautiful. Fits two.</Description>
+    <ThingClass>Building_Bed</ThingClass>
+    <graphicData>
+      <texPath>Furniture/Imp_Bed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(4,4)</drawSize>
+      <damageData>
+        <rect>(0,0.05,2,1.95)</rect>
+      </damageData>
+    </graphicData>
+    <AltitudeLayer>Building</AltitudeLayer>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0.01</Flammability>
+      <WorkToBuild>4500</WorkToBuild>
+      <Mass>90</Mass>
+      <Beauty>150</Beauty>
+      <BedRestEffectiveness>1.15</BedRestEffectiveness>
+      <Comfort>2.90</Comfort>
+      <ImmunityGainSpeedFactor>1.5</ImmunityGainSpeedFactor>
+    </statBases>
+    <Size>(2,2)</Size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>110</costStuffCount>
+    <costList>
+      <Steel>25</Steel>
+    </costList>
+    <building>
+      <Bed_ShowSleeperBody>False</Bed_ShowSleeperBody>
+      <bed_healPerDay>18</bed_healPerDay>
+    </building>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>VitalsMonitor</li>
+        </linkableFacilities>
+      </li>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+    </comps>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <fillPercent>0.4</fillPercent>
+    <PathCost>60</PathCost>
+    <LeaveResourcesWhenKilled>True</LeaveResourcesWhenKilled>
+    <StaticSunShadowHeight>0.17</StaticSunShadowHeight>
+    <CastEdgeShadows>True</CastEdgeShadows>
+    <designationHotKey>Misc4</designationHotKey>
+    <Passability>PassThroughOnly</Passability>
+    <DrawGUIOverlay>True</DrawGUIOverlay>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+  </ThingDef>
+
+  <ThingDef ParentName="PJ_ArtableFurnitureBase">
+    <defName>SW_Jedibed</defName>
+    <label>Jedi-Style bed</label>
+    <Description>A luxurious bed designed by Xen. Very comfy and beautiful. Fits two.</Description>
+    <ThingClass>Building_Bed</ThingClass>
+    <graphicData>
+      <texPath>Furniture/JediBed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(4,4)</drawSize>
+      <damageData>
+        <rect>(0,0.05,2,1.95)</rect>
+      </damageData>
+    </graphicData>
+    <AltitudeLayer>Building</AltitudeLayer>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0.01</Flammability>
+      <WorkToBuild>4500</WorkToBuild>
+      <Mass>90</Mass>
+      <Beauty>150</Beauty>
+      <BedRestEffectiveness>1.15</BedRestEffectiveness>
+      <Comfort>2.90</Comfort>
+      <ImmunityGainSpeedFactor>1.5</ImmunityGainSpeedFactor>
+    </statBases>
+    <Size>(2,2)</Size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>110</costStuffCount>
+    <costList>
+      <Steel>25</Steel>
+    </costList>
+    <building>
+      <Bed_ShowSleeperBody>False</Bed_ShowSleeperBody>
+      <bed_healPerDay>18</bed_healPerDay>
+    </building>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>VitalsMonitor</li>
+        </linkableFacilities>
+      </li>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+    </comps>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <fillPercent>0.4</fillPercent>
+    <PathCost>60</PathCost>
+    <LeaveResourcesWhenKilled>True</LeaveResourcesWhenKilled>
+    <StaticSunShadowHeight>0.17</StaticSunShadowHeight>
+    <CastEdgeShadows>True</CastEdgeShadows>
+    <designationHotKey>Misc4</designationHotKey>
+    <Passability>PassThroughOnly</Passability>
+    <DrawGUIOverlay>True</DrawGUIOverlay>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+  </ThingDef>
+
+  <ThingDef ParentName="PJ_ArtableFurnitureBase">
+    <defName>SW_Rebbed</defName>
+    <label>Rebel-Style bed</label>
+    <Description>A luxurious bed designed by Xen. Very comfy and beautiful. Fits two.</Description>
+    <ThingClass>Building_Bed</ThingClass>
+    <graphicData>
+      <texPath>Furniture/RebBed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(4,4)</drawSize>
+      <damageData>
+        <rect>(0,0.05,2,1.95)</rect>
+      </damageData>
+    </graphicData>
+    <AltitudeLayer>Building</AltitudeLayer>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0.01</Flammability>
+      <WorkToBuild>4500</WorkToBuild>
+      <Mass>90</Mass>
+      <Beauty>150</Beauty>
+      <BedRestEffectiveness>1.15</BedRestEffectiveness>
+      <Comfort>2.90</Comfort>
+      <ImmunityGainSpeedFactor>1.5</ImmunityGainSpeedFactor>
+    </statBases>
+    <Size>(2,2)</Size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>110</costStuffCount>
+    <costList>
+      <Steel>25</Steel>
+    </costList>
+    <building>
+      <Bed_ShowSleeperBody>False</Bed_ShowSleeperBody>
+      <bed_healPerDay>18</bed_healPerDay>
+    </building>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>VitalsMonitor</li>
+        </linkableFacilities>
+      </li>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+    </comps>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <fillPercent>0.4</fillPercent>
+    <PathCost>60</PathCost>
+    <LeaveResourcesWhenKilled>True</LeaveResourcesWhenKilled>
+    <StaticSunShadowHeight>0.17</StaticSunShadowHeight>
+    <CastEdgeShadows>True</CastEdgeShadows>
+    <designationHotKey>Misc4</designationHotKey>
+    <Passability>PassThroughOnly</Passability>
+    <DrawGUIOverlay>True</DrawGUIOverlay>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+  </ThingDef>
+
+
+  <ThingDef ParentName="PJ_FurnitureBase">
+    <defName>DejTable</defName>
+    <label>dejariik table</label>
+    <description>Dejarik is a popular game which has withstood the test of time better than nearly any other game in the galaxy. It originated as a Jedi game, though as it became much more widespread over time, many beings became unaware of its origins. </description>
+    <graphicData>
+      <texPath>Furniture/DejBoard</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.55,1.55)</drawSize>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0.09375,0.296875,0.796875,0.703125)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>false</rotatable>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <fillPercent>0.40</fillPercent>
+    <building>
+      <isJoySource>true</isJoySource>
+    </building>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>10000</WorkToBuild>
+      <Mass>5</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>4</Beauty>
+      <EntertainmentStrengthFactor>1.2</EntertainmentStrengthFactor>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>70</costStuffCount>
+    <pathCost>70</pathCost>
+    <passability>PassThroughOnly</passability>
+    <designationCategory>Joy</designationCategory>
+    <designationHotKey>Misc2</designationHotKey>
+		<comps>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+		</comps>
+  </ThingDef>
+
+    <ThingDef Abstract="True" ParentName="PJ_FurnitureBase" Name="PJ_TableBase">
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Building</altitudeLayer>
+    <description>People eat off tables when chairs are placed facing them.</description>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <pathCost>60</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <canOverlapZones>false</canOverlapZones>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <surfaceType>Eat</surfaceType>
+    <comps>
+      <li>
+        <compClass>CompGatherSpot</compClass>
+      </li>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="PJ_TableBase">
+    <defName>PJ_TableShort</defName>
+    <label>table (short)</label>
+    <graphicData>
+      <texPath>Furniture/TableShort</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(4,4)</drawSize>
+      <damageData>
+        <rect>(0.05,0.27,1.9,1.73)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <size>(2,2)</size>
+    <costStuffCount>50</costStuffCount>
+    <rotatable>false</rotatable>
+  </ThingDef>
+
+
+  <ThingDef ParentName="PJ_TableBase">
+    <defName>PJ_TableLong</defName>
+    <label>table (long)</label>
+    <graphicData>
+      <texPath>Furniture/TableLong</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(4,6)</drawSize>
+      <damageData>
+        <rectN>(0,0.27,2,3.73)</rectN>
+        <rectS>(0,0.27,2,3.73)</rectS>
+        <rectE>(0.125,0.27,3.75,1.73)</rectE>
+        <rectW>(0.125,0.27,3.75,1.73)</rectW>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>3000</WorkToBuild>
+      <Mass>20</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>2</Beauty>
+    </statBases>
+    <size>(2,4)</size>
+    <costStuffCount>95</costStuffCount>
+  </ThingDef>
+
+
+</Buildings>

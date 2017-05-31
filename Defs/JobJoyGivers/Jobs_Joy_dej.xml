@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <JobDef>
+    <defName>PlayDejarik</defName>
+    <driverClass>JobDriver_SitFacingBuilding</driverClass>
+    <reportString>playing dejarik.</reportString>
+    <joyDuration>4000</joyDuration>
+    <joyMaxParticipants>2</joyMaxParticipants>
+    <joyGainRate>1.1</joyGainRate>
+    <joySkill>Intellectual</joySkill>
+    <joyXpPerTick>0.004</joyXpPerTick>
+    <joyKind>GamingCerebral</joyKind>
+  </JobDef>
+
+  
+</Defs>

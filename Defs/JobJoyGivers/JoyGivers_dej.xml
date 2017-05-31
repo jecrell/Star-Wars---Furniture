@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Meditative -->
+  
+ 
+
+  <!-- Building - gaming cerebral -->
+
+  <JoyGiverDef>
+    <defName>PlayDejarik</defName>
+    <giverClass>JoyGiver_InteractBuildingSitAdjacent</giverClass>
+    <baseChance>1.5</baseChance>
+    <thingDefs>
+      <li>DejTable</li>
+    </thingDefs>
+    <jobDef>PlayDejarik</jobDef>
+    <joyKind>GamingCerebral</joyKind>
+    <requiredCapacities>
+      <li>Sight</li>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+
+ 
+</Defs>
