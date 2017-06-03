@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<DamageDef>
+		<defName>PJ_TurbolaserDam</defName>
+		<label>Turbolaser</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been blasted by turbolasers.</deathMessage>
+		<harmsHealth>true</harmsHealth>
+		<impactSoundType>Electric</impactSoundType>
+		<armorCategory>Electric</armorCategory>
+		<explosionDamage>60</explosionDamage>
+		<hediff>Burn</hediff>
+		<spreadOut>true</spreadOut>
+		<hasForcefulImpact>true</hasForcefulImpact>
+		<explosionSnowMeltAmount>0</explosionSnowMeltAmount>
+		<explosionCellMote>Mote_BlastEMP</explosionCellMote>
+		<explosionColorCenter>(0.5, 0.9, 0.5, 0.9)</explosionColorCenter>
+		<explosionColorEdge>(0.2, 0.8, 0.2, 0.8)</explosionColorEdge>
+		<explosionInteriorMote>Mote_ElectricalSpark</explosionInteriorMote>
+		<soundExplosion>Explosion_EMP</soundExplosion>
+	</DamageDef>
+	
+</Defs>

@@ -47,7 +47,7 @@
 		<graphicData>
 			<texPath>Furniture/Empchair</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2.4,2.4)</drawSize>
+			<drawSize>(2.2,2.2)</drawSize>
 			<shadowData>
 				<volume>(0.6, 0.6, 0.6)</volume>
 			</shadowData>

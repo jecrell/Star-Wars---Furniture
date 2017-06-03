@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <!--=============== turbolaser ===============-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>PJ_TLaser_Turret</defName>
+    <label>Turbolaser turret</label>
+    <thingClass>Building_TurretGun</thingClass>
+    <graphicData>
+      <texPath>Buildings/TLaserBase</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <stealable>false</stealable>
+    <statBases>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Flammability>0.1</Flammability>
+      <WorkToMake>8000</WorkToMake>
+      <Beauty>90</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>2.1</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>700</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <description>Fortified Turbolaser tower. Consumes a large amount of power, but has devastating firepower.</description>
+    <size>(3,3)</size>
+    <passability>Impassable</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.9</fillPercent>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>600</costStuffCount>
+    <costList>
+      <Steel>500</Steel>
+      <Component>15</Component>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <specialDisplayRadius>36</specialDisplayRadius>
+    <building>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>Gun_PJ_TurboLaser</turretGunDef>
+      <turretBurstCooldownTime>1.1</turretBurstCooldownTime>
+      <turretTopgraphicPath>Buildings/TLaserTop</turretTopgraphicPath>
+    </building>
+    <rotatable>true</rotatable>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_PJ_Turbolaser</defName>
+    <label>Turbolaser bolt</label>
+    <graphicData>
+      <texPath>Projectile/BlasterboltTG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>PJ_TurbolaserDam</damageDef>
+      <flyOverhead>false</flyOverhead>
+      <damageAmountBase>55</damageAmountBase>
+      <speed>100</speed>
+      <explosionRadius>0.5</explosionRadius>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_PJ_TurboLaser</defName>
+    <label>Turbolaser turret gun</label>
+    <graphicData>
+      <texPath>Buildings/TLaserTop</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <menuHidden>true</menuHidden>
+    <description>Heavy power turbolaser.</description>
+    <soundInteract>InteractRifle</soundInteract>
+    <canBeSpawningInventory>false</canBeSpawningInventory>
+    <tradeability>Never</tradeability>
+    <statBases>
+      <AccuracyTouch>0.95</AccuracyTouch>
+      <AccuracyShort>0.95</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.75</AccuracyLong>
+      <RangedWeapon_Cooldown>0.20</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>TurretGun</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_PJ_Turbolaser</projectileDef>
+        <warmupTime>1.3</warmupTime>
+        <range>36.0</range>
+        <minRange>4</minRange>
+        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+        <burstShotCount>2</burstShotCount>
+        <soundCast>PJ_TurboLSnd</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+
+
+</ThingDefs>
