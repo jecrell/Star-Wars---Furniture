@@ -84,7 +84,6 @@
     <graphicData>
       <texPath>Buildings/TLaserTop</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>3</drawSize>
     </graphicData>
     <menuHidden>true</menuHidden>
     <description>Heavy power turbolaser.</description>
@@ -116,11 +115,6 @@
         <muzzleFlashScale>6</muzzleFlashScale>
       </li>
     </verbs>
-    <comps>
-    <li>
-		    <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
-		  </li>
-      </comps>
   </ThingDef>
 
 

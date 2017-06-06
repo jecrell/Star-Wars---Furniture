@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="PJ_BuildingBase" Name="PJ_SculptureBase" Abstract="True">
+    <thingClass>Building_Art</thingClass>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <castEdgeShadows>true</castEdgeShadows>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <Flammability>1.0</Flammability>
+			<SellPriceFactor>1.10</SellPriceFactor>
+    </statBases>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>ArtName_Sculpture</nameMaker>
+        <descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+				<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+      </li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <recipeMaker>
+      <workSpeedStat>SculptingSpeed</workSpeedStat>
+      <workSkill>Artistic</workSkill>
+      <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+      <effectWorking>Sculpt</effectWorking>
+      <soundWorking>Recipe_Sculpt</soundWorking>
+      <recipeUsers>
+        <li>TableSculpting</li>
+      </recipeUsers>
+			<defaultIngredientFilter>
+				<categories>
+					<li>Root</li>
+				</categories>
+				<exceptedThingDefs>
+					<li>Gold</li>
+					<li>Silver</li>
+					<li>Plasteel</li>
+					<li>Jade</li>
+					<li>Uranium</li>
+				</exceptedThingDefs>
+			</defaultIngredientFilter>
+    </recipeMaker>
+  </ThingDef>
+
+  
+  
+<!--
+
+  <ThingDef ParentName="PJ_SculptureBase">
+    <defName>PJ_SculptureSmall</defName>
+    <label>small sculpture</label>
+    <description>A torso-sized piece of material sculpted into an artistic form.</description>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/Art/SculptureSmall</texPath>
+    </graphicData>
+    <minifiedDef>MinifiedSculpture</minifiedDef>
+    <fillPercent>0.35</fillPercent>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>90</MaxHitPoints>
+      <Mass>5</Mass>
+      <Beauty>50</Beauty>
+      <WorkToMake>18000</WorkToMake>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>70</costStuffCount>
+  </ThingDef>
+
+  <ThingDef ParentName="PJ_SculptureBase">
+    <defName>PJ_SculptureLarge</defName>
+    <label>large sculpture</label>
+    <description>A person-sized piece of material sculpted into an artistic form.</description>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Statues/RevanStat</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <minifiedDef>MinifiedSculpture</minifiedDef>
+    <fillPercent>0.5</fillPercent>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>10</Mass>
+      <Beauty>100</Beauty>
+			<WorkToMake>30000</WorkToMake>
+	</statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>135</costStuffCount>
+  </ThingDef>
+
+  -->
+
+  <ThingDef ParentName="PJ_SculptureBase">
+    <defName>PJ_SculptureGrand</defName>
+    <label>revan sculpture</label>
+    <description>A large statue of the Sith and Jedi master, Revan.</description>
+    <graphicData>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Statues/RevanStat</texPath>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <minifiedDef>MinifiedSculpture</minifiedDef>
+    <fillPercent>0.5</fillPercent>
+    <rotatable>true</rotatable>
+    <size>(2,2)</size>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Beauty>240</Beauty>
+      <Mass>50</Mass>
+			<WorkToMake>65000</WorkToMake>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>260</costStuffCount>
+  </ThingDef>
+
+</Defs>
