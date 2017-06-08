@@ -14,11 +14,13 @@
         <cornerBL>Damage/Corner</cornerBL>
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
+      <shadowData>
+				<volume>(2, 2, 0.6)</volume>
+			</shadowData>
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
     <passability>Impassable</passability>
     <blockWind>true</blockWind>
-    <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>1</fillPercent>
     <canOverlapZones>false</canOverlapZones>
     <statBases>

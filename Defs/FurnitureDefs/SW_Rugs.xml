@@ -38,7 +38,7 @@
 		<costStuffCount>100</costStuffCount>
 		<description>3x4 Rug with depiction of a desert colony</description>
 		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-		<rotatable>false</rotatable>
+		<rotatable>true</rotatable>
 		<comps>
 			<li Class="CompProperties_RoomIdentifier">
 				<roomStat>Impressiveness</roomStat>
@@ -84,7 +84,7 @@
 		<costStuffCount>100</costStuffCount>
 		<description>Rug with a depiction of a battle between an X-wing and TIE fighter.</description>
 		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-		<rotatable>false</rotatable>
+		<rotatable>true</rotatable>
 		<comps>
 			<li Class="CompProperties_RoomIdentifier">
 				<roomStat>Impressiveness</roomStat>
@@ -130,7 +130,7 @@
 		<costStuffCount>100</costStuffCount>
 		<description>3x4 Rug with depiction of a battle with an Imperial walker and Rebel speeders</description>
 		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-		<rotatable>false</rotatable>
+		<rotatable>true</rotatable>
 		<comps>
 			<li Class="CompProperties_RoomIdentifier">
 				<roomStat>Impressiveness</roomStat>
@@ -175,7 +175,7 @@
 		<costStuffCount>100</costStuffCount>
 		<description>3x4 Rug with depiction of the valley of the dark lords on Korriban</description>
 		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-		<rotatable>false</rotatable>
+		<rotatable>true</rotatable>
 		<comps>
 			<li Class="CompProperties_RoomIdentifier">
 				<roomStat>Impressiveness</roomStat>

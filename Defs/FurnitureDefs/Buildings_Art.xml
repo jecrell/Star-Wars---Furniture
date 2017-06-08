@@ -114,6 +114,9 @@
       <graphicClass>Graphic_Multi</graphicClass>
       <texPath>Statues/RevanStat</texPath>
       <drawSize>(4,4)</drawSize>
+      <shadowData>
+				<volume>(2, 4, 2)</volume>
+			</shadowData>
     </graphicData>
     <minifiedDef>MinifiedSculpture</minifiedDef>
     <fillPercent>0.5</fillPercent>

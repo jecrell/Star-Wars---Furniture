@@ -36,7 +36,7 @@
     <description>Fortified Turbolaser tower. Consumes a large amount of power, but has devastating firepower.</description>
     <size>(3,3)</size>
     <passability>Impassable</passability>
-    <castEdgeShadows>true</castEdgeShadows>
+    <castEdgeShadows>false</castEdgeShadows>
     <fillPercent>0.9</fillPercent>
     <stuffCategories>
       <li>Metallic</li>
@@ -74,7 +74,7 @@
       <flyOverhead>false</flyOverhead>
       <damageAmountBase>55</damageAmountBase>
       <speed>100</speed>
-      <explosionRadius>0.5</explosionRadius>
+      <explosionRadius>1.5</explosionRadius>
     </projectile>
   </ThingDef>
 
@@ -108,11 +108,11 @@
         <warmupTime>1.3</warmupTime>
         <range>36.0</range>
         <minRange>4</minRange>
-        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+        <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
         <burstShotCount>2</burstShotCount>
         <soundCast>PJ_TurboLSnd</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
-        <muzzleFlashScale>6</muzzleFlashScale>
+        <muzzleFlashScale>30</muzzleFlashScale>
       </li>
     </verbs>
   </ThingDef>
