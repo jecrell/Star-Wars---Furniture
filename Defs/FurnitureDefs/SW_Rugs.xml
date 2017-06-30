@@ -183,4 +183,49 @@
 		</comps>
 	</ThingDef>
 
+	<ThingDef ParentName="PJ_FurnitureBase">
+		<defName>PJ_5Rug</defName>
+		<label>Confrontation rug</label>
+		<thingClass>Building</thingClass>
+		<researchPrerequisites>
+			<li>CarpetMaking</li>
+		</researchPrerequisites>
+		<graphicData>
+			<texPath>Furniture/Rug_5_PJ</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4.5,3.5)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<building>    
+			<isEdifice>false</isEdifice>
+		</building>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Standable</passability>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToBuild>550</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>15</Beauty>
+			<Cleanliness>0.5</Cleanliness>
+			<Mass>6</Mass>
+		</statBases>
+		<size>(4,3)</size>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<description>3x4 Rug with depiction of a Sith Lord confronting a Jedi Master</description>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<rotatable>true</rotatable>
+		<comps>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+		</comps>
+	</ThingDef>
+
 </Buildings>

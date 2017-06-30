@@ -69,6 +69,7 @@
       <texPath>Projectile/BlasterboltTG</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
     <projectile>
       <damageDef>PJ_TurbolaserDam</damageDef>
       <flyOverhead>false</flyOverhead>

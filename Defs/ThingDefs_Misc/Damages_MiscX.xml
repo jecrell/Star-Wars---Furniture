@@ -19,7 +19,7 @@
 		<explosionColorCenter>(0.5, 0.9, 0.5, 0.9)</explosionColorCenter>
 		<explosionColorEdge>(0.2, 0.8, 0.2, 0.8)</explosionColorEdge>
 		<explosionInteriorMote>Mote_ElectricalSpark</explosionInteriorMote>
-		<soundExplosion>Explosion_EMP</soundExplosion>
+		<soundExplosion>PJ_Dryblast</soundExplosion>
 	</DamageDef>
 	
 </Defs>
