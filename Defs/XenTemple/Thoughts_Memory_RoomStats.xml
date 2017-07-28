@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<ThoughtDef>
+		<defName>JoyActivityInImpressiveFTemple</defName>
+		<durationDays>0.65</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>awful force temple</label>
+				<description>This is a disrespect to our holocron, it could get ruined.</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+				<li>
+				<label>dull force temple</label>
+				<description>The temple needs work - I can't focus properly there.</description>
+				<baseMoodEffect>-1</baseMoodEffect>
+			</li>
+			<li>
+				<label>mediocre force temple</label>
+				<description>Our temple needs work, but has promise.</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+			<li>
+				<label>learner force temple</label>
+				<description>We have a decent temple.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>padawan force temple</label>
+				<description>Our temple is nice.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+			<li>
+				<label>advanced padawan force temple</label>
+				<description>Our temple is pretty impressive.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+			<li>
+				<label>knight force temple</label>
+				<description>Our temple is very impressive - I feel the force there.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+			<li>
+				<label>elite knight's force temple</label>
+				<description>Our temple is amazing - The place is strong with the force.</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+			<li>
+				<label>master's force temple</label>
+				<description>Our temple is magnificent! A truly excellent place to meditate on the force.</description>
+				<baseMoodEffect>7</baseMoodEffect>
+			</li>
+			<li>
+				<label>grand master's force temple</label>
+				<description>Our temple must be one of the greatest in history. A sublime locus of the force.</description>
+				<baseMoodEffect>8</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+ 
+  
+</Defs>

@@ -1,0 +1,11 @@
+c:\users\tjx\documents\visual studio 2017\Projects\ForceTemples\ForceTemples\bin\Release\ForceTemples.dll
+c:\users\tjx\documents\visual studio 2017\Projects\ForceTemples\ForceTemples\bin\Release\ForceTemples.pdb
+c:\users\tjx\documents\visual studio 2017\Projects\ForceTemples\ForceTemples\bin\Release\Assembly-CSharp.dll
+c:\users\tjx\documents\visual studio 2017\Projects\ForceTemples\ForceTemples\bin\Release\UnityEngine.dll
+c:\users\tjx\documents\visual studio 2017\Projects\ForceTemples\ForceTemples\bin\Release\Assembly-CSharp-firstpass.dll
+c:\users\tjx\documents\visual studio 2017\Projects\ForceTemples\ForceTemples\bin\Release\NAudio.dll
+c:\users\tjx\documents\visual studio 2017\Projects\ForceTemples\ForceTemples\bin\Release\NVorbis.dll
+c:\users\tjx\documents\visual studio 2017\Projects\ForceTemples\ForceTemples\bin\Release\UnityEngine.xml
+c:\users\tjx\documents\visual studio 2017\Projects\ForceTemples\ForceTemples\obj\Release\ForceTemples.csprojResolveAssemblyReference.cache
+c:\users\tjx\documents\visual studio 2017\Projects\ForceTemples\ForceTemples\obj\Release\ForceTemples.dll
+c:\users\tjx\documents\visual studio 2017\Projects\ForceTemples\ForceTemples\obj\Release\ForceTemples.pdb

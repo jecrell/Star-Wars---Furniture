@@ -41,4 +41,28 @@
     </subSounds>
   </SoundDef>
 
+      <SoundDef>
+    <defName>PJ_HoloSound</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Holocron</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>13.51151</min>        
+          <max>16.53479</max>
+        </volumeRange>      
+        <pitchRange>
+			<min>0.9152174</min>
+			<max>1.042391</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>   
+
 </DefPackage-SoundDef>

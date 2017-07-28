@@ -22,5 +22,19 @@
     </requiredCapacities>
   </JoyGiverDef>
 
- 
+  <JoyGiverDef>
+    <defName>UseHolocron</defName>
+    <giverClass>ForceTemples.JoyGiver_UseHolocron</giverClass>
+    <baseChance>2</baseChance>
+    <thingDefs>
+      <li>PJ_Holocron</li>
+    </thingDefs>
+    <jobDef>UseHolocron</jobDef>
+    <joyKind>Study</joyKind>
+    <requiredCapacities>
+      <li>Sight</li>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+
 </Defs>
