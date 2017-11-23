@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ThingDefs>
+<Defs>
 
   <!--=============== turbolaser ===============-->
   <ThingDef ParentName="BuildingBase">
@@ -54,7 +54,7 @@
       <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>Gun_PJ_TurboLaser</turretGunDef>
       <turretBurstCooldownTime>1.1</turretBurstCooldownTime>
-      <turretTopgraphicPath>Buildings/TLaserTop</turretTopgraphicPath>
+      <turretTopGraphicPath>Buildings/TLaserTop</turretTopGraphicPath>
     </building>
     <rotatable>true</rotatable>
     <placeWorkers>
@@ -105,7 +105,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <projectileDef>Bullet_PJ_Turbolaser</projectileDef>
+        <defaultProjectile>Bullet_PJ_Turbolaser</defaultProjectile>
         <warmupTime>1.3</warmupTime>
         <range>36.0</range>
         <minRange>4</minRange>
@@ -119,4 +119,4 @@
   </ThingDef>
 
 
-</ThingDefs>
+</Defs>

@@ -9,3 +9,15 @@ c:\users\tjx\documents\visual studio 2017\Projects\ForceTemples\ForceTemples\bin
 c:\users\tjx\documents\visual studio 2017\Projects\ForceTemples\ForceTemples\obj\Release\ForceTemples.csprojResolveAssemblyReference.cache
 c:\users\tjx\documents\visual studio 2017\Projects\ForceTemples\ForceTemples\obj\Release\ForceTemples.dll
 c:\users\tjx\documents\visual studio 2017\Projects\ForceTemples\ForceTemples\obj\Release\ForceTemples.pdb
+E:\Steam2\steamapps\common\RimWorld\Mods\SW-Furniture\Source\ForceTemples\ForceTemples\bin\Release\ForceTemples.dll
+E:\Steam2\steamapps\common\RimWorld\Mods\SW-Furniture\Source\ForceTemples\ForceTemples\bin\Release\ForceTemples.pdb
+E:\Steam2\steamapps\common\RimWorld\Mods\SW-Furniture\Source\ForceTemples\ForceTemples\bin\Release\Assembly-CSharp.dll
+E:\Steam2\steamapps\common\RimWorld\Mods\SW-Furniture\Source\ForceTemples\ForceTemples\bin\Release\UnityEngine.dll
+E:\Steam2\steamapps\common\RimWorld\Mods\SW-Furniture\Source\ForceTemples\ForceTemples\bin\Release\TextMeshPro-1.0.55.56.0b11.dll
+E:\Steam2\steamapps\common\RimWorld\Mods\SW-Furniture\Source\ForceTemples\ForceTemples\bin\Release\Assembly-CSharp-firstpass.dll
+E:\Steam2\steamapps\common\RimWorld\Mods\SW-Furniture\Source\ForceTemples\ForceTemples\bin\Release\NAudio.dll
+E:\Steam2\steamapps\common\RimWorld\Mods\SW-Furniture\Source\ForceTemples\ForceTemples\bin\Release\NVorbis.dll
+E:\Steam2\steamapps\common\RimWorld\Mods\SW-Furniture\Source\ForceTemples\ForceTemples\bin\Release\UnityEngine.UI.dll
+E:\Steam2\steamapps\common\RimWorld\Mods\SW-Furniture\Source\ForceTemples\ForceTemples\obj\Release\ForceTemples.csprojResolveAssemblyReference.cache
+E:\Steam2\steamapps\common\RimWorld\Mods\SW-Furniture\Source\ForceTemples\ForceTemples\obj\Release\ForceTemples.dll
+E:\Steam2\steamapps\common\RimWorld\Mods\SW-Furniture\Source\ForceTemples\ForceTemples\obj\Release\ForceTemples.pdb

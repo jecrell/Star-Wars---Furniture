@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<DefPackage-SoundDef>
+<Defs>
    <SoundDef>
     <defName>PJ_TurboLSnd</defName>  
     <context>MapOnly</context>
@@ -65,4 +65,4 @@
     </subSounds>
   </SoundDef>   
 
-</DefPackage-SoundDef>
+</Defs>

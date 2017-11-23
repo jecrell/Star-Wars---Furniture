@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Buildings>
+<Defs>
 
   <ThingDef ParentName="BuildingBase">
     <defName>CommsConsole</defName>
@@ -51,10 +51,10 @@
       <li Class="CompProperties_Breakdownable"/>
     </comps>
     <staticSunShadowHeight>0.5</staticSunShadowHeight>
-    <designationHotkey>Misc3</designationHotkey>
+    <designationHotKey>Misc3</designationHotKey>
     <researchPrerequisites>
       <li>MicroelectronicsBasics</li>
     </researchPrerequisites>
   </ThingDef>
   
-</Buildings>
+</Defs>
